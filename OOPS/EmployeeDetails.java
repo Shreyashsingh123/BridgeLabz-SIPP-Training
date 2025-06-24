@@ -1,7 +1,7 @@
 public class EmployeeDetails {
     public static void main(String[] args) {
         Employee emp1=new Employee("ram",29,56000);
-        Employee emp2=new Employee("Harsh",44,40500);
+        Employee emp2=new Employee(" Harsh",44,40500);
         System.out.println("first Employee details are");
         emp1.display();
 System.out.println("Second Employee Details are  ");
