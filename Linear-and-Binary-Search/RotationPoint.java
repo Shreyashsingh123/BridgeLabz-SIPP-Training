@@ -1,0 +1,25 @@
+public class RotationPoint {
+    public static int findMinIndex(int[] arr) {
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left < right) {
+            int mid = (left + right) / 2;
+
+            if (arr[mid] > arr[right]) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+
+        return left; // index of the smallest element
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {6, 7, 8, 1, 2, 3, 4, 5};
+        int index = findMinIndex(arr);
+        System.out.println("Index of the smallest element: " + index);
+        System.out.println("Smallest element: " + arr[index]);
+    }
+}
