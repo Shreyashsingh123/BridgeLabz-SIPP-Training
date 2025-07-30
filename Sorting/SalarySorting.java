@@ -39,3 +39,5 @@ public class SalarySorting {
         for (int s : salaries) System.out.print(s + " ");
     }
 }
+
+
